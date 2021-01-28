@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup" class="d-flex m-0">
+  <div class="mb-0 mr-2">
+    <input type="text" formControlName="search" class="form-control" placeholder="Search person">
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="filterIsAdult" formControlName="isAdult">
+    <label class="form-check-label font-weight-bold text-primary" for="filterIsAdult">Adult</label>
+  </div>
+</form>

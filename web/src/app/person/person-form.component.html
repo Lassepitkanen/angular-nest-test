@@ -1,0 +1,12 @@
+<form class="row" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="input-group col-3 pr-0">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name" aria-describedby="basic-addon2" formControlName="firstName">
+  </div>
+  <div class="input-group col-3 p-0">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" aria-describedby="basic-addon2" formControlName="lastName">
+  </div>
+  <div class="input-group col-3 p-0">
+    <input type="number" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon2" formControlName="age">
+  </div>
+  <button class="btn btn-success" type="submit" [disabled]="!form.valid">Add</button>
+</form>
